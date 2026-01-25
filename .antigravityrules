@@ -1,0 +1,47 @@
+# MentionMe Base Mini App - Development Rules
+
+## Documentation Access
+- Base Mini App documentation is in /docs folder
+- Reference these files when implementing features:
+  - Authentication: docs/Authentication_Documentation.docx
+  - Payments: docs/Accept_Payment_Documentation.docx
+  - Navigation: docs/Navigation_documentation.docx
+  - Context: docs/Context_Documentation.docx
+  - Base Account: docs/Base_Account_Documentation.docx
+  - Mini App Setup: docs/Minikit_Documentation.docx
+- When unsure about Base SDK usage, read relevant doc file first
+
+## Critical Navigation Rules
+- NEVER use <a href=""> tags for external links (crashes WebView)
+- ALWAYS use: sdk.actions.openUrl(url) from @farcaster/miniapp-sdk
+- For cast sharing: sdk.actions.composeCast({ text, embeds })
+- For viewing casts: sdk.actions.viewCast(castUrl)
+
+## Authentication & Security
+- User is already connected via Base Account - NO wallet connection UI
+- For auth: use sdk.quickAuth.getToken()
+- Verify JWT on backend with @farcaster/quick-auth
+- sdk.context data is NOT secure - only use for UX hints
+
+## Payment Integration
+- Use pay() from @base-org/account for all payments
+- Currency: USDC only
+- Cannot collect: email, phone, shipping address (not supported in Mini Apps)
+- Platform fee: 10% of every transaction
+- Recipient gets: 90% of payment
+
+## Code Quality Standards
+- Explain changes BEFORE making them
+- Only modify files that need changing
+- Keep implementations simple
+- Add loading states for all async operations
+- Handle all errors with user-friendly messages
+- Use TypeScript strict mode
+
+## Project Tech Stack
+- Framework: Next.js 14 with App Router
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Mini App SDK: @farcaster/miniapp-sdk
+- Payments: @base-org/account
+- Wallet: Wagmi + farcasterMiniApp() connector
