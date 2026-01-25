@@ -1,27 +1,32 @@
-# Base Mini App Demo
+# MentionMe 💬💰
 
-A demo [mini app](https://miniapps.farcaster.xyz) to demonstrate the functionality available for mini app developers in [Base App](https://base.app).
+**Monetize your attention on Farcaster**
 
-Note: this Base Mini App Demo used to live [here](https://github.com/Vicolee/frames-v2-demo) and was recently moved to this `base/demos` repo so it can be more easily found
+Set your price, get paid in USDC when people mention you. Built on Base.
 
-## Getting Started
+## Features
+- ⚡ Set your mention price ($0-$100)
+- 💸 Get paid instantly in USDC via Base Pay
+- 📊 Track earnings and mention stats
+- 🎨 Clean fintech UI (Cash App inspired)
 
-This is a [NextJS](https://nextjs.org/) + TypeScript + React app.
+## Tech Stack
+- Next.js 14 + TypeScript
+- Tailwind CSS
+- @farcaster/miniapp-sdk
+- @base-org/account (Base Pay)
 
-To install dependencies:
-
+## Development
 ```bash
-$ yarn
+npm install
+npm run dev
 ```
 
-To run the app:
+Open http://localhost:3000
 
-```bash
-$ yarn dev
-```
+## Status
+🚧 UI Complete - Backend integration in progress
 
-To test your mini app in Farcaster's playground or in Base App, you'll want to use a tunneling tool like [ngrok](https://ngrok.com/)
+---
 
-## Relevant Links
-- [Mini Apps in Base App Docs](https://docs.base.org/base-app/introduction/mini-apps)
-- [MiniKit Docs](https://docs.base.org/base-app/build-with-minikit/overview)
+**Built for Base Mini Apps** 🔵
