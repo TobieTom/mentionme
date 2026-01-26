@@ -42,7 +42,7 @@ export function SetPrice() {
     const earnings = (parseFloat(price || "0") * 0.9).toFixed(2);
 
     return (
-        <div className="space-y-6 bg-neutral-50 min-h-screen p-4">
+        <div className="space-y-6 bg-neutral-50 min-h-screen px-4 py-6 pb-24">
             {/* Header Card */}
             <div className="bg-white border border-neutral-200 p-8 rounded-2xl text-center shadow-sm">
                 <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2 font-medium">Current Rate</div>
@@ -53,7 +53,7 @@ export function SetPrice() {
             </div>
 
             {/* Preset Buttons */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4">
                 {[
                     { label: "Free", value: "0" },
                     { label: "Cheap", value: "1" },

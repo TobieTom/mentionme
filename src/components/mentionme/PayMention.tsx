@@ -127,7 +127,7 @@ export function PayMention() {
     };
 
     return (
-        <div className="space-y-6 bg-neutral-50 min-h-screen p-4">
+        <div className="space-y-6 bg-neutral-50 min-h-screen px-4 py-6 pb-24">
             {/* Hero Cost Display */}
             <div className="bg-white border border-neutral-200 p-10 rounded-2xl text-center shadow-sm">
                 <div className="text-xs uppercase tracking-wide text-neutral-500 mb-3 font-medium">Total Cost</div>

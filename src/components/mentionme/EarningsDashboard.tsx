@@ -20,7 +20,7 @@ export function EarningsDashboard() {
     ];
 
     return (
-        <div className="space-y-6 bg-neutral-50 min-h-screen p-4">
+        <div className="space-y-6 bg-neutral-50 min-h-screen px-4 py-6 pb-24">
             {/* Activity Status */}
             <div className="bg-white border border-neutral-200 p-4 rounded-xl shadow-sm flex items-center justify-between">
                 <div className="text-sm font-medium text-neutral-900">
@@ -32,7 +32,7 @@ export function EarningsDashboard() {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white border border-neutral-200 p-6 rounded-xl shadow-sm">
                     <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2 font-medium">Total Earned</div>
                     <div className="text-3xl font-mono font-bold text-emerald-600 tracking-tight">${stats.totalEarned}</div>
