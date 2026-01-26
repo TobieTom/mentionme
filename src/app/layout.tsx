@@ -8,13 +8,16 @@ import { METADATA } from "~/lib/utils";
 
 export const metadata: Metadata = {
   title: METADATA.name,
-    openGraph: {
-      title: METADATA.name,
-      description: METADATA.description,
-      images: [METADATA.bannerImageUrl],
-      url: METADATA.homeUrl,
-      siteName: METADATA.name
-    },
+  openGraph: {
+    title: METADATA.name,
+    description: METADATA.description,
+    images: [METADATA.bannerImageUrl],
+    url: METADATA.homeUrl,
+    siteName: METADATA.name
+  },
+  other: {
+    "base:app_id": "6977930988e3bac59cf3d9e1",
+  },
 };
 
 export default async function RootLayout({
