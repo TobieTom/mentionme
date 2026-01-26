@@ -1,0 +1,12 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "MentionMe",
+    "iconUrl": "https://mentionme-omega.vercel.app/icon.png",
+    "homeUrl": "https://mentionme-omega.vercel.app",
+    "splashImageUrl": "https://mentionme-omega.vercel.app/splash.png",
+    "splashBackgroundColor": "#0a0a0a",
+    "heroImageUrl": "https://mentionme-omega.vercel.app/hero.png",
+    "tagline": "Monetize your attention"
+  }
+}
