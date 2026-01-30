@@ -1,12 +1,20 @@
 {
-  "miniapp": {
-    "version": "1",
-    "name": "MentionMe",
-    "iconUrl": "https://mentionme-omega.vercel.app/icon.png",
-    "homeUrl": "https://mentionme-omega.vercel.app",
-    "splashImageUrl": "https://mentionme-omega.vercel.app/splash.png",
-    "splashBackgroundColor": "#0a0a0a",
-    "heroImageUrl": "https://mentionme-omega.vercel.app/hero.png",
-    "tagline": "Monetize your attention"
-  }
+    "miniapp": {
+        "version": "1",
+        "name": "MentionMe",
+        "iconUrl": "https://mentionme-omega.vercel.app/icon.png",
+        "homeUrl": "https://mentionme-omega.vercel.app",
+        "splashImageUrl": "https://mentionme-omega.vercel.app/splash.png",
+        "splashBackgroundColor": "#0A0A0A",
+        "heroImageUrl": "https://mentionme-omega.vercel.app/hero.png",
+        "subtitle": "Monetize your attention",
+        "description": "Set your price, get paid in USDC when people mention you.",
+        "tagline": "Get paid to be mentioned",
+        "primaryCategory": "social",
+        "tags": [
+            "social",
+            "finance",
+            "monetization"
+        ]
+    }
 }
